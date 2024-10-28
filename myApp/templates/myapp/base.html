@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{title}}</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    </head>
+    <body>
+        <header>
+            <div class="head">
+                <div class="atas">
+                    {% include 'myApp/navbar.html' %}
+                    {% include 'myApp/sosmed.html' %}
+                </div>
+                <img class="me" src="{% static 'myapp/img/image.jpg' %}">
+            </div>
+            <h1>FATHANAH HAMIDAH TSAQIB</h1>
+            <p class="ket">Student of Computer Science Education</p>
+        </header>
+
+        <main>
+           {% block content %}
+           <p>A highly motivated student in Computer Science Education at 
+            Universitas Pendidikan Indonesia (UPI), with a passion for both technology and teaching. 
+            Skilled in computer science fundamentals and dedicated to creating engaging learning experiences. 
+            Enthusiastic about integrating technology in education to foster accessible and innovative educational 
+            environments.</p>
+           {% endblock %}
+        </main>
+
+        <footer>
+            <p class="end">&copy; 2024 Fathanah Hamidah Tsaqib. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

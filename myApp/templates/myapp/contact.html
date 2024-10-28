@@ -1,0 +1,27 @@
+{% extends 'myApp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Contact</h2>
+    <hr>
+    <div class="kontak">
+        <ul>
+            <li class="contact-item">
+                <img src="{% static 'myapp/img/alamat.jpg' %}" alt="Alamat">
+                <span>Bandung, Jawa Barat</span>
+            </li>
+            <li class="contact-item">
+                <img src="{% static 'myapp/img/email.jpg' %}" alt="Email">
+                <a href="mailto:fathamidah03@gmail.com">fathamidah03@gmail.com</a>
+            </li>
+            <li class="contact-item">
+                <img src="{% static 'myapp/img/instagram.jpg' %}" alt="Instagram">
+                <a href="https://instagram.com/fathnhh" target="_blank">fathnhh</a>
+            </li>
+            <li class="contact-item">
+                <img src="{% static 'myapp/img/linkedin.jpg' %}" alt="LinkedIn">
+                <a href="https://linkedin.com/in/fathnhh" target="_blank">linkedin.com/in/fathnhh</a>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
